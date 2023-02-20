@@ -14,7 +14,14 @@ everyNth("abcdefg", 3) → "adg"
 
     public String everyNth(String str, int n) {
 
+        String result = "";
+        str.substring(0, 1);
 
+        for (int i = 0; i < str.length(); i = i + n)
+            result = result + str.substring(i, i + 1);
+
+        return result;
     }
+
 
 }

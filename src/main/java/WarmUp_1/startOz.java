@@ -15,6 +15,20 @@ startOz("oxx") → "o"
 
     public String startOz(String str) {
 
+        if (str.length() > 1) {
+            String result = "";
+            {
+                if (str.charAt(0) == 'o') {
+                    result = result + "o";
+                }
+                if (str.charAt(1) == 'z') {
+                    result = result + "z";
+                }
+                return result;
+            }
+        } else {
+            return str;
+        }
     }
 
 

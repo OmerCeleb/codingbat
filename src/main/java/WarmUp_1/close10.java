@@ -14,6 +14,14 @@ close10(13, 7) → 0
 
     public int close10(int a, int b) {
 
+        int dis_a = Math.abs(10 - a);
+        int dis_b = Math.abs(10 - b);
+        if (dis_b == dis_a) {
+            return 0;
+        }
+        if (dis_a < dis_b) {
+            return a;
+        } else return b;
     }
 
 }
